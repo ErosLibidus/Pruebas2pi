@@ -85,7 +85,7 @@ if choose == "Primer Analisis":
                         color=mapa["total_adult_patients_hospitalized_confirmed_covid"], 
                         labels={"location":"Estado", "color":"Muertes"}, 
                         color_continuous_scale="ylorrd", color_discrete_map="black")
-    st.pyplot(fig)
+    st.plotly_chart(fig)
 
     #Uso de camas UCI
     st.header("Uso de camas UCI")
